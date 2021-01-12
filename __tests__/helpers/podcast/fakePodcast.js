@@ -11,12 +11,12 @@ const getCategory = () => {
 };
 
 module.exports = {
-  thumbnailImageURL: faker.image.people(),
+  thumbnailImageURL: faker.image.avatar(),
   description: faker.lorem.paragraph(),
-  imageURL: faker.image.people(),
-  title: faker.lorem.paragraph(),
+  imageURL: faker.image.image(),
+  title: faker.lorem.words(),
   category: getCategory(),
-  stars: 3.5,
+  stars: Math.random() * 5,
   duration: '01:11',
   durationInSeconds: 71,
   fileName: 'filename',
